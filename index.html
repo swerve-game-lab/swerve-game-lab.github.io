@@ -1,0 +1,430 @@
+<a>
+    <b>x</b>
+</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Swerve: Draw &amp; Glide Puzzles, an Android game by Majid Moharami.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #111827;
+      --border-color: #1f2937;
+      --border-accent: #374151;
+      --text-main: #f9fafb;
+      --text-secondary: #9ca3af;
+      --text-dim: #6b7280;
+      --accent: #38bdf8;
+      --accent-subtle: rgba(56, 189, 248, 0.1);
+      --success: #10b981;
+      --success-subtle: rgba(16, 185, 129, 0.1);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 0;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* Top Badge & Header */
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--success);
+      background: var(--success-subtle);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+
+    .meta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 2rem;
+    }
+
+    .meta-list strong {
+      color: var(--text-main);
+    }
+
+    /* Direct Notice Box */
+    .callout {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    .callout strong {
+      color: var(--text-main);
+    }
+
+    /* Table of Contents */
+    .toc {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .toc h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      margin-bottom: 1rem;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 0.5rem 1.5rem;
+      list-style: none;
+    }
+
+    .toc-grid a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.92rem;
+      transition: color 0.15s ease;
+    }
+
+    .toc-grid a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Content Sections */
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #e5e7eb;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 0.98rem;
+    }
+
+    ul, ol {
+      color: var(--text-secondary);
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.96rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.85em;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      color: #e5e7eb;
+    }
+
+    /* Simple Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.04);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
+    }
+
+    .card.highlight {
+      border-left: 4px solid var(--accent);
+    }
+
+    .card.success {
+      border-left: 4px solid var(--success);
+    }
+
+    /* Contact Box */
+    .contact-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-item {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-email {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      margin-top: 4rem;
+      padding-top: 2rem;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    footer p {
+      margin-bottom: 0.35rem;
+      color: var(--text-dim);
+    }
+  </style>
+  <title>Privacy Policy - Swerve</title>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="badge">Privacy Policy</div>
+
+    <h1>Privacy Policy for Swerve</h1>
+    <div class="meta-list">
+      <div>Application: <strong>Swerve: Draw &amp; Glide Puzzles (com.game.swerve)</strong></div>
+      <div>Developer: <strong>Majid Moharami</strong></div>
+      <div>Contact: <strong>majid.moharami79@gmail.com</strong></div>
+      <div>Effective Date: <strong>October 28, 2026</strong></div>
+    </div>
+
+    <section id="overview">
+      <h2>1. Overview</h2>
+      <p>
+        Swerve is a single-player puzzle game. It has no accounts and no chat or user-generated content.
+        It shows ads and offers optional in-app purchases. This policy explains what data the game and the
+        services it uses collect, and why.
+      </p>
+      <ul>
+        <li><strong>App:</strong> Swerve: Draw &amp; Glide Puzzles</li>
+        <li><strong>Package:</strong> <code>com.game.swerve</code> (Google Play, Cafe Bazaar, Myket)</li>
+        <li><strong>Developer:</strong> Majid Moharami</li>
+        <li><strong>Contact:</strong> <a href="mailto:majid.moharami79@gmail.com">majid.moharami79@gmail.com</a></li>
+        <li><strong>Policy URL:</strong> <a href="https://swerve-game-lab.github.io/">https://swerve-game-lab.github.io/</a></li>
+      </ul>
+    </section>
+
+    <section id="on-device">
+      <h2>2. What stays on your device</h2>
+      <p>
+        Your stars, best scores, streak, hints, purchases already credited and settings are saved only on your
+        device (in the app's local storage). Uninstalling the app or using <strong>Profile &rarr; Reset progress</strong>
+        deletes them. We do not run any server of our own and receive none of this data.
+      </p>
+    </section>
+
+    <section id="stats">
+      <h2>3. Anonymous gameplay statistics (optional)</h2>
+      <p>
+        The first time you play, Swerve asks whether you want to share anonymous gameplay statistics. Nothing is
+        sent unless you tap <strong>Share stats</strong>, and you can turn it off at any time in
+        <strong>Profile &rarr; Share anonymous stats</strong>. If you agree, the game uses
+        <strong>Google Analytics for Firebase</strong> to record:
+      </p>
+      <ul>
+        <li>which levels you start, finish, restart or leave, and how long they take;</li>
+        <li>stars earned, ink used and hints used;</li>
+        <li>chapters unlocked and completed, and daily challenges played;</li>
+        <li>settings changes (sound, haptics) and store or ad interactions;</li>
+        <li>basic device and app information collected by Firebase (device model, operating system version, app version, country and language, and a random app-instance identifier).</li>
+      </ul>
+      <p>
+        These statistics are used only to understand which levels are too easy or too hard and to improve the game.
+        Google keeps this event data for up to 14 months and then deletes it automatically.
+      </p>
+    </section>
+
+    <section id="ads">
+      <h2>4. Advertising</h2>
+      <p>
+        Swerve shows ads from <strong>Google AdMob</strong>: a banner on the menus, occasionally a full-screen ad
+        between levels, and optional rewarded ads you choose to watch (for an extra hint, a level skip, another
+        daily challenge try or a streak save). Players in Iran, where AdMob serves no ads, see ads from
+        <strong>Adivery</strong> instead.
+      </p>
+      <p>
+        To show and measure ads, these networks may collect your device's <strong>advertising ID</strong>, IP address
+        (from which an approximate location is derived), device and app information, and ad interaction data.
+        Where the law requires it (for example in the EU, UK and Switzerland), Swerve asks for your consent through
+        Google's consent form before personalized ads are shown; you can change your choice at any time in
+        <strong>Profile &rarr; Ad privacy choices</strong>. You can reset or delete your advertising ID in your device
+        settings (Settings &rarr; Google &rarr; Ads).
+      </p>
+      <p>
+        How Google uses data from apps that use its services:
+        <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+      </p>
+    </section>
+
+    <section id="purchases">
+      <h2>5. In-app purchases</h2>
+      <p>
+        Swerve offers two optional purchases: <strong>Remove Ads</strong> (one-time) and a <strong>Hints Pack</strong>.
+        Payments are handled entirely by the store you installed the game from (Google Play, Cafe Bazaar or Myket).
+        We never see your payment details; the game only receives a purchase confirmation so it can credit what you bought.
+      </p>
+    </section>
+
+    <section id="sharing">
+      <h2>6. Sharing and sale of data</h2>
+      <p>
+        We do not sell personal data. Data is shared only with the service providers above (Google Firebase,
+        Google AdMob, Adivery and your app store) for the purposes described. All data is sent encrypted (HTTPS).
+        Swerve does not collect your name, email address, contacts, photos or precise location.
+      </p>
+    </section>
+
+    <section id="permissions">
+      <h2>7. Permissions</h2>
+      <ul>
+        <li><strong>Vibration:</strong> haptic feedback during play.</li>
+        <li><strong>Internet / network state:</strong> loading ads, purchases and the optional statistics.</li>
+        <li><strong>Advertising ID:</strong> used by the ad networks to show and measure ads.</li>
+        <li><strong>Billing:</strong> in-app purchases through your app store.</li>
+      </ul>
+    </section>
+
+    <section id="deletion">
+      <h2>8. Your choices and data deletion</h2>
+      <ul>
+        <li>Turn statistics off in <strong>Profile &rarr; Share anonymous stats</strong>.</li>
+        <li>Change ad consent in <strong>Profile &rarr; Ad privacy choices</strong>, or reset your advertising ID in device settings.</li>
+        <li>Delete all game data on the device with <strong>Profile &rarr; Reset progress</strong> or by uninstalling the app.</li>
+        <li>To ask for deletion of statistics linked to your app-instance identifier, email us at the address below.</li>
+      </ul>
+    </section>
+
+    <section id="children">
+      <h2>9. Children</h2>
+      <p>
+        Swerve contains no mature content, but it is not directed at children under 13 and we do not knowingly collect
+        data from them. Ads are not personalized for users identified as under the age of consent.
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2>10. Changes</h2>
+      <p>If this policy changes, the updated version will be published at this address with a new effective date.</p>
+    </section>
+
+    <section id="contact">
+      <h2>11. Contact</h2>
+      <p>Questions or requests: <a href="mailto:majid.moharami79@gmail.com">majid.moharami79@gmail.com</a></p>
+    </section>
+
+  </div>
+</body>
+</html>
